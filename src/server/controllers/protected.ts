@@ -1,7 +1,8 @@
 import { BadRequestError, Body, JsonController, Post } from "routing-controllers";
 import { V1_API_DOMAIN } from "../../constants";
 
-interface ProtectedResourceBody {
+// Exported to create a request body for testing
+export interface ProtectedResourceBody {
   operation: "SEND" | "REQUEST",
   count: number,
   text: string,
@@ -16,7 +17,7 @@ export default class ProtectedController {
    */
   @Post()
   async getProtected(@Body() body: ProtectedResourceBody) {
-    if (body.text?.length > 4096) {
+    if (body.text?.length > 4096) {    
       throw new BadRequestError();
     }
     const response = await fetch(`${V1_API_DOMAIN}/v1/protected`, {
