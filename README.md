@@ -1,11 +1,4 @@
-# carSHAiR QA Assessment
-
-![carSHAiR Logo](https://www.carshair.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCarSHAiR-Logo.bfa0a90d.png&w=3840&q=75)
-### Background
-
-carSHAiR is a peer to peer car sharing platform with a mission to bring high tech solutions to provide an exceptional experience for Guests and Hosts within the car sharing space.
-
-Often, our developers will produce untested code, and QA will assist in testing their work before it is accepted and merged. We will use this repository to assess your proficiency in source control and testing.
+# QA Assessment
 
 ### Objectives
 
